@@ -25,5 +25,10 @@ namespace Todo.Services
         {
             throw new NotImplementedException();
         }
+
+        public Task<bool> MarkDoneAsync(Guid id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
