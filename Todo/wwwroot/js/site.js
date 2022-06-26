@@ -6,6 +6,10 @@ $(document).ready(function () {
     $('.done-checkbox').on('click', function (e) {
         markCompleted(e.target);
     });
+
+    $('input[type=date]').each(function () {
+        this.min = new Date().toISOString().substr(0, 10);
+    });
 });
 
 function markCompleted(checkbox) {
