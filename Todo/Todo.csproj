@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\Todo\" />
+    <None Remove="Services\" />
+  </ItemGroup>
+  <ItemGroup>
     <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
   </ItemGroup>
 
@@ -19,4 +23,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Todo\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
 </Project>
