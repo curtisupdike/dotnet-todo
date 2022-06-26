@@ -20,5 +20,10 @@ namespace Todo.Services
             };
             return Task.FromResult(new[] { item1, item2 });
         }
+
+        public Task<bool> AddItemAsync(TodoItem newItem)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
