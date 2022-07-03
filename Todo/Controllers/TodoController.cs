@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using Todo.Services;
 using Todo.Models;
 
 namespace Todo.Controllers
 {
+    [Authorize]
     public class TodoController : Controller
     {
         private readonly ITodoItemService _todoItemService;
